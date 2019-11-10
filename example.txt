@@ -1,3 +1,43 @@
 Hello fg
 
-test
+test for selenium auto testing
+
+  Create a new project
+Go to Project -> Project Properties
+Inside Java Build Path, choose Libraries tab and Classpath section.
+Click Add External JARs… then select all JAR files of Selenium Package.
+Apply and Close
+
+2
+Click on file menu -> New -> Java Project, and create a blank project
+Right-click on the project, and create a new Class (eg. Circle)
+Declare a data member, e.g. float radius
+Right-click on the class Circle, choose Source and click on Generate Getters and Setters...
+
+Declare a function calcArea() and implement it.
+Right-click on the project -> New -> JUnit Test Case
+
+
+Give a name to the Test case and click Browse... and browse for the Circle class. Click Next>
+
+Select the method calcArea(), on which the test-case is to be written.
+
+Inside the default test method, write the code:
+	Circle c = new Circle();
+	c.setRadius(1.0f)
+	float calculatedArea = c.calcArea();
+	assertEquals(calculatedArea, 3.14f);
+
+Then run the test case: Right-click on the Test case Class -> Run As -> JUnit Test
+Repeat steps 2 - 10 to create a new class and Testcase for same.
+In order to run all Testcases, we create a Test Suite:
+Right-click on the Project -> New -> Other... -> JUnit -> JUnit Test Suite.
+
+
+In Source folder, Browse to the source folder in the Project with Test cases.
+Select all Test case classes
+Click Finish 
+
+
+To run the Test Suite, Right-click on the Test Suite Class -> Run As -> JUnit Test
+
